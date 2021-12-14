@@ -1,0 +1,61 @@
+﻿<Properties StartupConfiguration="runn">
+  <MonoDevelop.Ide.ItemProperties.Client PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Repository/Data/AccountRepository.cs">
+    <Files>
+      <File FileName="Controllers/AccountsController.cs" Line="1" Column="1" IsPinned="True" />
+      <File FileName="Startup.cs" Line="45" Column="1" />
+      <File FileName="../Client/Controllers/TestCors.cs" Line="23" Column="10" />
+      <File FileName="../Client/Views/TestCors/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Controllers/EmployeesController.cs" Line="43" Column="37" />
+      <File FileName="Repository/Data/EmployeeRepository.cs" Line="46" Column="18" />
+      <File FileName="Program.cs" Line="23" Column="13" />
+      <File FileName="../Client/Program.cs" Line="1" Column="1" />
+      <File FileName="Controllers/AccountRoleController.cs" Line="29" Column="8" />
+      <File FileName="Controllers/UniversityController.cs" Line="28" Column="29" />
+      <File FileName="Repository/Data/EducationRepository.cs" Line="1" Column="1" />
+      <File FileName="Repository/Data/AccountRepository.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="API" expanded="True">
+            <Node name="API" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Repository" expanded="True">
+                <Node name="Data" expanded="True">
+                  <Node name="AccountRepository.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="ViewModel" expanded="True" />
+            </Node>
+            <Node name="Client" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="TestCors" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>Client/Client.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="runn" Name="runn">
+      <Items>
+        <StartupItem ItemId="{4F279271-3EB8-4475-8A02-B698C5888969}" ItemName="API" ConfigurationId="Default" />
+        <StartupItem ItemId="{A48DDFE7-1C25-4093-8B8B-8112D0E59E83}" ItemName="Client" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+</Properties>

@@ -1,0 +1,180 @@
+﻿@{
+    Layout = "_LayoutDataTables";
+}
+
+<div class="table-responsive-xl">
+    <div><br /></div>
+
+    <h2 class="text-lef" style="color:midnightblue">Registered Employee List</h2>
+    <div style="height: 25px"> </div>
+    <button type="button" class="btn text-light" style="background-color:#191970" onclick='' data-toggle="modal" data-target="#exampleModal">
+        <b class="text-light">Insert Data</b>
+    </button>
+    <table class="table table-striped " id="tabelEmployee">
+
+        <thead>
+            <tr style="background-color: midnightblue">
+                <th scope="col" class="text-light text-center">No</th>
+                <th scope="col" class="text-light text-center">NIK</th>
+                <th scope="col" class="text-light text-center">Nama</th>
+                <th scope="col" class="text-light text-center">NO HP</th>
+                <th scope="col" class="text-light text-center">Tanggal Lahir</th>
+                <th scope="col" class="text-light text-center">Gaji</th>
+                <th scope="col" class="text-light text-center">Email</th>
+                <th scope="col" class="text-light text-center">Gender</th>
+                <th scope="col" class="text-light text-center">Action</th>
+            </tr>
+        </thead>
+        <tbody id="listEmployee">
+        </tbody>
+    </table>
+
+</div>
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">Update Karyawan</h5>
+            </div>
+            <div class="modal-body">
+                <form id="FormEmployee">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="email2">Email</label>
+                            <input type="email" class="form-control" id="email2">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="phone2">Phone</label>
+                            <input type="text" class="form-control" id="phone2">
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstName2">First Name</label>
+                            <input type="text" class="form-control" id="firstName2">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastName2">Last Name</label>
+                            <input type="text" class="form-control" id="lastName2">
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-6">
+                            <label for="salary2">Salary</label>
+                            <input type="text" class="form-control" id="salary2">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="gender2">Gender</label>
+                            <input type="text" class="form-control" id="gender2">
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-6">
+                            <label for="nik2">NIK</label>
+                            <input type="text" class="form-control" id="nik2" placeholder="NIK">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="birthDate2">Birth Date</label>
+                            <input type="text" class="form-control" id="birthDate2">
+                        </div>
+                    </div>
+
+                </form>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="closeModal" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" onclick="Update()" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Registrasi Karyawan</h5>
+            </div>
+            <div class="modal-body">
+                <form id="FormEmployee">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="phone">Phone</label>
+                            <input type="text" class="form-control" id="phone" placeholder="Phone">
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-6">
+                            <label for="salary">Salary</label>
+                            <input type="text" class="form-control" id="salary" placeholder="salary">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="gender">Gender</label>
+                            <input type="text" class="form-control" id="gender" placeholder="Gender">
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-6">
+                            <label for="nik">NIK</label>
+                            <input type="text" class="form-control" id="nik" placeholder="NIK">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="birthDate">Birth Date</label>
+                            <input type="text" class="form-control" id="birthDate" placeholder="YYYY-MM-DD">
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="closeModal" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" onclick="Insert()" class="btn btn-primary">Insert Data</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.datatables.net/buttons/2.1.0/js/dataTables.buttons.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+
+    <script src="https://cdn.datatables.net/buttons/2.1.0/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.1.0/js/buttons.print.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+
+}
